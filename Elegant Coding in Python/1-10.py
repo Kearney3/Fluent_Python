@@ -1,4 +1,5 @@
 """字典排序"""
+from pprint import pprint
 
 users = [
     {'name': 'Harry', 'age': 20},
@@ -7,7 +8,8 @@ users = [
     {'name': 'Draco', 'age': 17},
     {'firsnametname': 'Ginny', 'age': 20},
 ]
-
+print(users)
+pprint(users)
 
 # wrong way
 # 无法解决关键字丢失或者字典是否合法的问题
