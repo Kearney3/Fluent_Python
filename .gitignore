@@ -6,3 +6,8 @@
 *.iml
 out
 gen
+
+Learning Python/*.txt
+Learning Python/*.db
+Learning Python/*.log
+Learning Python/*.pkl
