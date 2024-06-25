@@ -3,7 +3,7 @@
 """
 
 import types
-from imp import reload
+from importlib import import_module
 
 
 def status(module):
@@ -15,7 +15,7 @@ def status(module):
 
 def tryreload(module):
     try:
-        reload(module)
+        import_module(module)
     except:
         print('Failed to reload' + module.__name__)
 
@@ -31,6 +31,7 @@ def transitive_reload(module, visited):
         for attrobj in module.__dict__.values():
             if type(attrobj) == types.ModuleType:
                 transitive_reload(attrobj, visited)
+
 
 
 def reloadall(*modules):
@@ -51,5 +52,4 @@ def my_tester(reloader, modname):
 
 
 if __name__ == '__main__':
-    my_tester(reloadall, 'formats')
-    import Py
+    my_tester(reloadall, 'dir1.main')
