@@ -8,7 +8,8 @@ out
 gen
 
 Learning Python/*.txt
-Learning Python/*.db
+Learning Python/*.dbw
 Learning Python/*.log
 Learning Python/*.pkl
 Learning Python/*.bin
+/Learning Python//*.db
